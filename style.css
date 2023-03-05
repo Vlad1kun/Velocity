@@ -12,6 +12,11 @@ body {
     margin: 0 auto;
 }
 
+.common-section {
+    text-align: center;
+    padding: 80px 0;
+}
+
 p {
     color: #6A859C;
     line-height: 1.8;
@@ -19,6 +24,14 @@ p {
 
 .header {
     padding: 20px 0px;
+    width: 100%;
+    background-color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 }
 
 .container {
@@ -62,3 +75,163 @@ p {
 .header__nav a:active {
     color: #00315b;
 }
+
+.main {
+}
+.welcome {
+    background-color: #00315b;
+    min-height: 600px;
+    height: 100vh;
+    padding: 195px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url('/Velocity/img/welcomeBG.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.welcome__heading {
+    margin-bottom: 100px;
+    font-size: 59px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.welcome_links > * + *{
+    margin-left: 20px;
+}
+
+.link-primary {
+    display: inline-block;
+    padding: 11px 32px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    background: #69B9FF;
+    border-radius: 4px;
+    transition: all .4s;
+}
+
+.link-primary:hover {
+    background-color:#0078e1;
+}
+
+.link:hover {
+    background-color:rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.link:active {
+    background-color:rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.link {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    pad: 10px 30px;
+    transition: all .4s;
+}
+
+.about {
+    text-align: center;
+}
+
+
+.title-wrapper {
+    margin-bottom: 60px;
+}
+
+.title {
+    margin-bottom: 17px;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #676770;
+}
+
+.subtitle {
+    font-size: 17px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8E8E9C;
+}
+
+.about .cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .card {
+    padding: 35px 15px 20px;
+    width: 300px;
+    border: 1px solid #DCEBF7;
+    border-radius: 5px;
+}
+
+.about .card img {
+    width: 94px;
+    height: 94px;
+    background-size: contain;
+    margin-bottom: 20px;
+}
+
+.about .card h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.5;/
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    color: #676770;
+}
+
+.services .cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.common--dark {
+    background-color: #192024;
+}
+
+.common--dark * {
+    color: white;
+}
+
+.common--dark .subtitle {
+    color: #E8E8E8;
+}
+
+.services .card {
+    width: 460px;
+}
+.services .card .link {
+    margin-top: 15px;
+}
+
+.services .card img {
+    margin-bottom: 20px;
+}
+
+.services .card h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+
